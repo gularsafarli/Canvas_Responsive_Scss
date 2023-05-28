@@ -6,43 +6,42 @@
 // $Primarycolor:#fff;
 header{
     background-color: #202020;
+   .container{
+    max-width: 1100px;
+    margin: auto;
     .header{
         display: flex;
         justify-content: space-between;
         padding: 20px 15px;
-    }
-       .container{
-            max-width: 1150px;
-           margin: auto;        
-        }
         .main-left{
             display: flex;
              gap:12px;
-             p{
-                color:white;
-             }
         }
-        nav{
+       .main-right{
+          nav{
             ul{
             display: flex;
             list-style-type: none;
             gap:30px;
             color: #868686;
-            li{
-                a{
+              li{
+                  a{
                     text-decoration: none;
                     color:#fff;
                 }
             }
           }
+          button{
+            width: 100px;
+            height: 38px;
+            background-color: #ff3939;
+            border: none;
+            color:$Primarycolor;
+            border-radius: 10px;
+           }
         }
-        
-       button{
-        width: 100px;
-        height: 38px;
-        background-color: #ff3939;
-        border: none;
-        color:$Primarycolor;
-        border-radius: 10px;
        }
+        
+    }   
+   }   
 }
