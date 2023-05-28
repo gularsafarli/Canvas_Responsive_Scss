@@ -1,47 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,500;1,600;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,500;1,600;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-// $Primarycolor:#fff;
+$mainFont: 'Poppins', sans-serif;
+$SecondryFont:'Inter', sans-serif;
 header{
-    background-color: #202020;
+    background-color:black;
    .container{
-    max-width: 1100px;
-    margin: auto;
-    .header{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 15px;
-        .main-left{
+        max-width: 1120px;
+        margin: auto;
+        .header{
             display: flex;
-             gap:12px;
-        }
-       .main-right{
-          nav{
-            ul{
-            display: flex;
-            list-style-type: none;
-            gap:30px;
-            color: #868686;
-              li{
-                  a{
-                    text-decoration: none;
-                    color:#fff;
+            justify-content:space-between;
+            padding: 20px 10px;
+            .main-left{
+                 display: flex;
+                 gap:10px;
+                h1{
+                    font-family: $SecondryFont;
+                    font-weight: 300;
+                    color:white;
+                    font-size: 32px;
                 }
             }
-          }
-          button{
-            width: 100px;
-            height: 38px;
-            background-color: #ff3939;
-            border: none;
-            color:$Primarycolor;
-            border-radius: 10px;
-           }
+            .main-right{
+                nav{
+                    display: flex;
+                    ul{
+                        display: flex;
+                        gap:40px;
+                       
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-family: $mainFont;
+                            a{
+                                text-decoration: none;
+                                color: #868686;
+                            }
+                            button{
+                                width: 100px;
+                                height: 40px;
+                                border:none;
+                                background-color: #ff3939;
+                                color:#fff;
+                             border-radius: 4px;
+                             font-family: $mainFont;
+                            }
+                        }
+                    }
+                }
+            }
         }
-       }
-        
-    }   
-   }   
+    }
 }
+#first-section{
+    // height: 100vh;
+    background-image: url('./img/graphic-designers-meeting.png');
+    background-size: cover;
+    background-color:black;
+    .container{
+        max-width: 1120px;
+        margin: auto;
+        .first-section{
+            text-align: center;
+             padding-top: 180px;
+              .first-p{
+                font-family: $mainFont;
+                font-size: 18px;
+                color:#fff;
+                margin-bottom: 20px;
+                span{
+                   color:#ff3939;
+                }
+              }
+              h1{
+                text-transform:capitalize ;
+                font-family: $mainFont;
+                font-size: 60px;
+                font-style:700;
+                line-height: 128%;
+                letter-spacing: 3px;
+                color:#fff;
+              }
+              .second-p{
+                color:#fff;
+                font-family: $mainFont;
+                font-size: 14px; 
+                margin:25px 25px;         
+              }
+              .fst-section-btn{
+                display: flex;
+                justify-content: center;
+                gap:18px;
+                margin-top: 40px;
+                padding-bottom: 180px;
+                .section-btn1{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: #ff3939;
+                   
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                  }
+                  .section-btn2{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 4px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                  }
+              }
+        }
+    }
+}
+#second-section{
+    width: 100%;
+    position: relative;
+    padding-bottom: 160px;
+    .container{
+        max-width: 1120px;
+        margin: auto;
+        .second-section{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            gap:250px;
+            .second-section-left{
+                .second-section-img1{
+                    width: 348px;
+                    height: 350px;
+                    position: relative;
+                }
+                .second-section-img2{
+                    position: absolute;
+                    width: 286px;
+                    height: 310px;
+                    top:155px;
+                    left:400px;
+                }
+            }
+            .second-section-right{
+                .second-right1{
+                    font-family: $mainFont;
+                    font-size: 16px;
+                    text-align: center;
+                    span{
+                        color:#ff3939;
+                        font-family: $mainFont;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+                h1{
+                    font-family: $mainFont;
+                    font-size: 40px;
+                    line-height: 60px;
+                    margin: 18px 0px 25px 0px;
+                    span{
+                        color:#ff3939; 
+                    }
+                }
+                .second-right2{
+                    font-family: $mainFont;
+                    font-size: 15px;
+                    // border: 3px solid #ff2cbf ;
+                    height: 233px;
+                    width: 480px;
+                } 
+                button{
+                    background-color:#ff3939; 
+                    border:none;
+                    width: 160px;
+                    height: 44px;
+                    border-radius: 3px;
+                    a{
+                        text-decoration: none;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}
+#third-section{
+    .container{
+        max-width: 1120px;
+        margin: auto;
+        .third-section{
+          
+
+            .third-section-left{
+                .third-section-p1{
+                    font-family: $mainFont;
+                    font-style: bold;
+                    font-size: 16px;
+                }
+                span{
+                    color: #ff3939;
+                    font-family: $mainFont;
+                    font-style: bold;
+                    font-size: 16px;
+                }
+                h1{
+                   font-family: $mainFont;
+                   font-size: 42px;
+                   font-style: Bold;
+                   span{
+                    font-family: $mainFont;
+                   font-size: 42px;
+                   font-style: Bold;
+                    color:#ff3939;
+                   }
+                }
+                button{
+                    background-color:#ff3939; 
+                    border:none;
+                    width: 160px;
+                    height: 44px;
+                    border-radius: 3px;
+                    a{
+                        text-decoration: none;
+                        color:#fff;
+                    }
+                }
+            }
+            .third-section-right{
+               .right-logo{
+                .logo-up{
+                    .ui-ux{
+                      background-color: violet;
+                    }
+                }
+               }
+               
+            }
+        }
+    }
+}
+
