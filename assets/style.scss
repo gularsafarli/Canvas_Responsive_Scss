@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// $Primarycolor:#fff;
+header{
+    background-color: #202020;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+    }
+       .container{
+            max-width: 1150px;
+           margin: auto;        
+        }
+        .main-left{
+            display: flex;
+             gap:12px;
+             p{
+                color:white;
+             }
+        }
+        nav{
+            ul{
+            display: flex;
+            list-style-type: none;
+            gap:30px;
+            color: #868686;
+            li{
+                a{
+                    text-decoration: none;
+                    color:#fff;
+                }
+            }
+          }
+        }
+        
+       button{
+        width: 100px;
+        height: 38px;
+        background-color: #ff3939;
+        border: none;
+        color:$Primarycolor;
+        border-radius: 10px;
+       }
+}

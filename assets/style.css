@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #202020;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+header .container {
+  max-width: 1150px;
+  margin: auto;
+}
+header .main-left {
+  display: flex;
+  gap: 12px;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  color: #868686;
+}
+header button {
+  width: 100px;
+  height: 38px;
+  background-color: #ff3939;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
