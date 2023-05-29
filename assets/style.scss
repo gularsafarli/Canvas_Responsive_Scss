@@ -7,6 +7,8 @@
 }
 $mainFont: 'Poppins', sans-serif;
 $SecondryFont:'Inter', sans-serif;
+$MainColor:#ff3939;
+$SecondColor:#fff;
 header{
     background-color:black;
    .container{
@@ -125,6 +127,7 @@ header{
         }
     }
 }
+
 #second-section{
     width: 100%;
     position: relative;
@@ -194,35 +197,47 @@ header{
         }
     }
 }
+
 #third-section{
+    background-color:#202020;
     .container{
         max-width: 1120px;
         margin: auto;
         .third-section{
-          
-
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 90px 0px 100px 0px;
             .third-section-left{
                 .third-section-p1{
                     font-family: $mainFont;
                     font-style: bold;
                     font-size: 16px;
+                    color:$SecondColor;
                 }
                 span{
                     color: #ff3939;
                     font-family: $mainFont;
                     font-style: bold;
-                    font-size: 16px;
+                    font-size: 13px;
                 }
                 h1{
                    font-family: $mainFont;
-                   font-size: 42px;
-                   font-style: Bold;
+                   font-size: 47px;
+                   color:$SecondColor;
+                   width: 500px;
                    span{
                     font-family: $mainFont;
-                   font-size: 42px;
+                   font-size: 47px;
                    font-style: Bold;
                     color:#ff3939;
                    }
+                }
+                .third-section-p2{
+                    color:$SecondColor;
+                    margin:18px 0px 30px 0px;
+                    width: 400px;
+                    letter-spacing: 1px;
                 }
                 button{
                     background-color:#ff3939; 
@@ -232,15 +247,79 @@ header{
                     border-radius: 3px;
                     a{
                         text-decoration: none;
-                        color:#fff;
+                        color:$SecondColor;
                     }
                 }
             }
             .third-section-right{
                .right-logo{
                 .logo-up{
+                    display: flex;
+                    gap:30px;
                     .ui-ux{
-                      background-color: violet;
+                        border: none;
+                        background:$SecondColor;
+                        border-radius: 3px;
+                        width: 250px;
+                        height: 150px;
+                        text-align: center;   
+                        font-family: $mainFont;     
+                        font-size: 13px;
+                        h6{
+                            font-family: $mainFont;     
+                        font-size: 13px;
+                        font-weight: bold;
+                        }            
+                    }
+                    .development{
+                        border: none;
+                        border-radius: 3px;
+                        background:$SecondColor;
+                        width: 250px;
+                        height: 150px;
+                        text-align: center;   
+                        font-family: $mainFont;    
+                        font-size: 13px;
+                        h6{
+                        font-family: $mainFont;     
+                        font-size: 13px;
+                        font-weight: bold;
+                        }   
+                    }
+                }
+                .logo-down{
+                   display: flex;
+                   gap:30px;
+                   margin-top: 70px;
+                    .mobile-development{
+                        border: none;
+                        border-radius: 3px;
+                        background:$SecondColor;
+                        width: 250px;
+                        height: 150px;
+                        text-align: center;   
+                        font-family: $mainFont;    
+                        font-size: 13px;
+                        h6{
+                            font-family: $mainFont;     
+                            font-size: 13px;
+                            font-weight: bold;
+                            }   
+                    }
+                    .seo{
+                        border: none;
+                        border-radius: 3px;
+                        background:$SecondColor;
+                        width: 250px;
+                        height: 150px;
+                        text-align: center;   
+                        font-family: $mainFont;    
+                        font-size: 13px;
+                        h6{
+                            font-family: $mainFont;     
+                            font-size: 13px;
+                            font-weight: bold;
+                        }
                     }
                 }
                }
@@ -249,4 +328,188 @@ header{
         }
     }
 }
+
+#fourth-section{
+    .container{
+        max-width: 1120px;
+        margin: auto;
+        .fourth-section{
+            padding:80px 0px 90px 0px;
+             .fourth-top{
+                text-align: center;
+                .portfolio{
+                    font-family: $mainFont;
+                    color:#696969;
+                    font-family: 13px;
+                }
+                h1{
+                    font-family: $mainFont;
+                    font-size: 48px;
+                  
+                    text-align: center;
+                    span{
+                        color:$MainColor;
+                        font-size: 48px;
+                    }
+                }                
+                 
+                
+             }
+
+             .fourth-top-bottom{
+                display: flex;
+                gap:20px;
+                justify-content: center;
+                align-items: center;
+               
+                margin: 40px 0px 52px 0px;
+                .all{
+                    background-color: #ff3939;
+                   padding: 6px 29px;
+                    color:$SecondColor;
+                    font-family: $mainFont;
+                    font-weight: 14px;
+                    border-radius: 4px;
+                }
+                .ui{
+                    background-color: #f2f2f2;
+                    padding: 6px 32px;
+                    font-family: $mainFont;
+                    font-weight: 14px;
+                    border-radius: 8px;
+                }
+                .d-ment{
+                    background-color: #f2f2f2;
+                    padding: 6px 32px;
+                    font-family: $mainFont;
+                    font-weight: 14px;
+                    border-radius: 4px;
+                }
+                .mobile{
+                    background-color: #f2f2f2;
+                    padding: 6px 32px;
+                    font-family: $mainFont;
+                    font-weight: 14px;
+                    border-radius: 4px;
+                }
+                .seo{
+                    background-color: #f2f2f2;
+                    padding: 6px 32px;
+                    font-family: $mainFont;
+                    font-weight: 14px;
+                    border-radius: 4px;
+                }
+             }
+             .fourth-bottom{
+                display: flex;
+                gap:30px;
+                justify-content: center;
+               .img-1{
+                 width: 280px;
+                 height: 330px;
+            
+               }
+               .img-2{
+                width: 300px;
+                height: 400px;
+               }
+               .img-3{
+                width: 280px;
+                height: 330px;
+               }
+             }
+        }
+    }
+}
+
+#fifth-section{
+    background-color: #202020;
+    .container{
+        max-width: 1120px;
+        margin: auto;
+         .fifth-section{
+            .fifth-top{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 100px;
+                  .top-left{
+                    display: flex;
+                    align-items: center;
+                    gap:8px;
+                    font-family: $mainFont;
+                    font-size: 18px;
+                    color:$SecondColor;
+                    span{
+                        font-family: $mainFont;
+                    color:$MainColor;
+                    }
+                         img{
+                            height: 1.5px;
+                         }
+                  }
+            }
+            h1{
+                font-family: $mainFont;
+                color:$SecondColor;
+            font-size: 40px;
+            margin-top: 14px;
+            margin-bottom: 60px;
+                span{
+                    color:$MainColor;
+                }
+            }
+          
+            .fifth-bottom{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 100px;
+                .botom{
+                    border-radius: 4px;
+                    text-align: center;
+                    font-family: $mainFont;
+                    font-size: 10px;
+                    background-color: $SecondColor;
+                    width: 290px;
+                    height: 190px;
+                    
+                    .first-img{
+                        background-color: $MainColor;
+                        padding: 20px;
+                        border-radius: 30px;
+                    }
+                    h6{
+                        font-family: $mainFont;
+                        font-size: 12px;
+                        margin:10px 0px 8px 0px;
+                    }
+                    .star{
+                       display: flex;
+                       justify-content: center;
+                       gap:10px;
+                       margin-bottom: 10px;
+                    }
+                }
+               
+            }
+        }
+
+
+    }
+}
+
+#sixth-section{
+    .container{
+        max-width: 1120px;
+        margin: auto;
+        .boxs{
+            .box1{
+                width: 700px;
+                height: 45px;
+                background-color:#202020 ;
+            }
+        }
+    }
+
+}
+
 
